@@ -1,2 +1,3 @@
-Demo SIGE (Sistema Integral de Gestión Electoral).
-Derechos reservador motion7.
+SIGE Demo.
+Derechos reservados por motion7.
+@Autor Paz Flores Manuel
