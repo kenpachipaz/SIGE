@@ -82,18 +82,16 @@ iframe{
 	 right:50%;
 	 font-size: 20px;
 	 padding-top: 10px;
-	 padding-left: 10px;
 	 text-align: center;
 }
 #menu a {
     text-decoration: none;
+    padding: 10px 12px;
     color: white;
 }
 #menu a:hover{
-    background : #E66C26;
-    moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	color: #FFF;
+    background : #B7EFF2;
+	color: red;
 }
 #principal{
     display: flex;
@@ -123,7 +121,7 @@ iframe{
     box-shadow: 0 0 1px 1px rgba(255,255,255,.8) inset, 0 1px 0 rgba(0,0,0,.3);
 }
 /*Solo a los de tipo text*/
-input[type="text"]{
+input[type="text"], input[type="email"]{
   border: 1px solid #DADADA;
   color: #888;
   height: 20px;
@@ -138,4 +136,54 @@ input[type="text"]{
     box-shadow: inset 0px 1px 4px #ECECEC;
     -moz-box-shadow: inset 0px 1px 4px #ECECEC;
     -webkit-box-shadow: inset 0px 1px 4px #ECECEC;
+}
+#mapa{
+	padding-right: 100px;
+}
+.pieIndex{
+	margin-top: 245px;
+}
+select, input[type="number"]{
+	 border: 1px solid #DADADA;
+	 height: 25px;
+	 margin-bottom: 8px;
+	 margin-right: 6px;
+	 margin-top: 2px;
+	 padding: 3px 3px 3px 5px;
+	 width: 73%;
+     font-size: 12px;
+     background-color: #E4E3F0;
+	 color: #888;
+	 line-height:15px;
+    box-shadow: inset 0px 1px 4px #ECECEC;
+    -moz-box-shadow: inset 0px 1px 4px #ECECEC;
+    -webkit-box-shadow: inset 0px 1px 4px #ECECEC;
+}
+input[type="number"]{
+	 border: 1px solid #DADADA;
+	 height: 22px;
+	 margin-bottom: 8px;
+	 margin-right: 6px;
+	 margin-top: 2px;
+	 padding: 3px 3px 3px 5px;
+	 width: 70%;
+     font-size: 12px;
+     background-color: #E4E3F0;
+	 color: #888;
+	 line-height:15px;
+    box-shadow: inset 0px 1px 4px #ECECEC;
+    -moz-box-shadow: inset 0px 1px 4px #ECECEC;
+    -webkit-box-shadow: inset 0px 1px 4px #ECECEC;
+}
+#textoElec{
+	color:red; 
+	background:#B7EFF2;
+}
+#coordiSelect{
+	background-color: red;
+	color: white;
+}
+#textoB{
+	color:red; 
+	background:#B7EFF2;
 }

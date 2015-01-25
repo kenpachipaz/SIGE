@@ -2,9 +2,6 @@
 <html>
 	<head>
 		<meta charset="UTF-8" />
-		<meta http-equiv="Cache-control" content="private" />
-		<meta name="description" content="Registro electoral cuernavaca, morelos">
-		<meta name="keywords" content="Registro, Electoral, SIGE, Morelos, Cuernavaca, Integral">
 		<title>Inicio</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<link rel="shortcut icon" href="imagenes/logo.ico" type="image/x-icon" />
@@ -23,7 +20,7 @@
 			</header>
 			<section id="acceso">
 				<h1>Acceso</h1>
-				<form action="entrar.php" method="POST" class="formulario">
+				<form action="prueba.php" method="POST" class="formulario">
 					<table cellspacing="10px">
 						<tr>
 							<td>Usuario:</td>
@@ -49,6 +46,7 @@
 					</table>	
 					<img src="imagenes/SIGE.png" id="img"/>							
 				</form>
+				<?php echo $_POST["usuario"]."----".$_POST["contrasena"]; ?>
 			</section>	
 			<footer>
 				<center>

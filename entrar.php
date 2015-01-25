@@ -12,6 +12,7 @@
 		session_start();
 		header('Location:resgistro.php');
 		$_SESSION['sesionOK']="si";
+		$_SESSION['tipo']=$resultado["tipo"];
 	}else if($resultado['tipo']==null){
 	
 		header('Location:index.php?fallo_autentificacion=1');
@@ -19,5 +20,6 @@
 			session_start();
 		header('Location:admin.php');
 		$_SESSION['sesionOK']="si";
+		$_SESSION['tipo']=$resultado["tipo"];
 	}
 ?>

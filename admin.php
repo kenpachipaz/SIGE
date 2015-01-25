@@ -5,7 +5,9 @@
     header('Location:login.html');
     exit;
   } 
-
+  if($_SESSION["tipo"]){
+    header("Location:resgistro.php");
+  }
 ?>
 <html>
   <head>
@@ -24,14 +26,14 @@
     <div>
     <nav class="container">
       <ul id="menu" >
-        <li><a href="#" onclick="mostrarSeccion(0);">Buscar</a></li>
-        <li><a href="#" onclick="mostrarSeccion(1);" >Imprimir</a></li>        
+        <li><a href="#" style="color:red;" id="textoB" onclick="mostrarSeccion(0);">Buscar</a></li>
+        <li><a href="#" id="textoI" onclick="mostrarSeccion(1);" >Imprimir</a></li>        
         <li><a href="cerrarSesion.php">Salir</a></li>
       </ul>
     </nav>
     <section class="cuerpo">
       <iframe id="consulta" src="consulta.php">Tu navegador no soporta iframe</iframe>
-      <iframe id="imprimir" src="imprimir.php" style="display:none;">Tu navegador no soporta iframe</iframe>
+      <iframe id="imprimir" src="qimprime.php" style="display:none;">Tu navegador no soporta iframe</iframe>
     </section>
     <footer>
         <center>
